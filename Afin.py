@@ -98,18 +98,6 @@ def descifrar(texto: str,  a: int = 1, k: int = 1, alphabet: dict = ESPDICT):
         print('caracter no se encontro en el alfabeto asignado')
 
 
-def modInvB(char: str, mod: int):
-    res = None
-
-    for n in range(1, mod):
-        calc = char * n % mod
-        print(calc)
-        if calc > mod:
-            calc = calc % mod
-        if calc == 1:
-            return n
-
-
 def descifrarFuerzaBruta(texto: str, alphabet: dict = ESPDICT, top: int = 20):
     mod = len(alphabet)
     desifrados = []
